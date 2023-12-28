@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\pages;
 use Illuminate\Support\Facades\Route;
 
 
@@ -31,9 +32,6 @@ Route::middleware(['auth'])->group(function () {
         return view('pages.home.dashboard');
     })->name('home');
     Route::resource('user', UserController::class);
-
-
-    // Route::resource('user', UserController::class);
     // Route::resource('product', \App\Http\Controllers\ProductController::class);
 });
 
