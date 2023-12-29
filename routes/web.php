@@ -24,7 +24,7 @@ Route::get('register', function () {
 })->name('register');
 Route::post('register', function () {
     return view('pages.auth.login');
-})->name('register');
+})->name('registerProcess');
 
 Route::middleware(['auth'])->group(function () {
     Route::get('home', function () {
