@@ -23,3 +23,6 @@ Route::post('login', [\App\Http\Controllers\Api\AuthController::class, 'login'])
 
 // api resource product
 Route::apiResource('products', \App\Http\Controllers\Api\ProductController::class)->middleware('auth:sanctum');
+
+// api resource order
+Route::apiResource('orders', \App\Http\Controllers\Api\OrderController::class)->middleware('auth:sanctum');
