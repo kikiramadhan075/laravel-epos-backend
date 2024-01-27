@@ -30,6 +30,9 @@ Route::middleware(['auth'])->group(function () {
     Route::get('home', function () {
         return view('pages.home.dashboard');
     })->name('home');
+    Route::get('integrasi', function (){
+        return view('pages.integrasi.index');
+    })->name('integrasi');
     Route::resource('user', UserController::class);
     Route::resource('product', \App\Http\Controllers\ProductController::class);
     Route::resource('order', \App\Http\Controllers\OrderController::class);

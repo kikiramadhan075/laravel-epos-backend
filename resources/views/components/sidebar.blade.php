@@ -47,5 +47,17 @@
                 </ul>
             </li>
 
+            <ul class="sidebar-menu">
+                <li class="menu-header">Integration</li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Integration</span></a>
+                    <ul class="dropdown-menu">
+                        <li class='{{ Request::is('integrasi.index') ? 'active' : '' }}'>
+                            <a class="nav-link" href="{{ route('integrasi.index') }}">Documentation API</a>
+                        </li>
+
+                    </ul>
+                </li>
+
     </aside>
 </div>
